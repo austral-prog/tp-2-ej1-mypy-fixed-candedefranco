@@ -10,4 +10,10 @@ def max_of_two(x, y):
 # Replace the "ANSWER HERE" for your answer
 def max_of_three(x, y, z):
     """Given x, y and z, that are 3 numbers, return the biggest number of the three."""
-    return "ANSWER HERE" # Remove this line and implement
+    biggest_of_two = max_of_two(x,y)
+    if biggest_of_two >= z:
+        return biggest_of_two
+    else:
+        return z
+    
+print(max_of_two(5,4))
